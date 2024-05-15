@@ -11,7 +11,8 @@ body{
 
 main{
   background-color:darkgray;
-  margin: 40px 40px;
+  margin: 80px;
+  padding: 20px;
   border: 1px solid;
 }
 
@@ -22,7 +23,7 @@ main{
 }
 
 .card{
-  width: 380px;
+  width: 320px;
   background-color: #fff;
   overflow: hidden;
   box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
