@@ -40,7 +40,7 @@ main{
   overflow: hidden;
   box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
   transition: all 400ms ease;
-  padding: 8px;
+  padding: 22px;
   margin: 10px;
   border-radius: 8px;
   border: solid 1px #FFC300;
