@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <form action="ruta.php" method="get" autocomplete="off">
+
+        <main>
+
+            <p id="Campo">Campo requerido</p>
+            <br>
+
+            <article class="Num1">
+                <label for="incidencia">Numero de incidencia.</label>
+                <input type="text" value="Q1167" name="incidencia" id="incidencia" minlength="12" maxlength="30"
+                    pattern="[0-9 Q]+" required>
+
+
+                <label for="recepcion" id="recepcion">Fecha/hora de recepcion</label>
+                <input type="text" value="2019-05-17 12:16:21" required>
+                <br><br>
+            </article>
+
+            <article class="Num2">
+
+                <h3>Informacion del usuario</h1>
+
+                    <label for="usuario">Nombre del cliente</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Felipe Zamora" minlength="12"
+                        maxlength="30" pattern="[A-Z a-z]+" required>
+
+                    <label for="identificacion" id="identificacion" >identificacion</label>
+                    <input type="texto" class="caja"  placeholder="1030542230"
+                        minlength="10" maxlength="10" pattern=[0-9]+ required>
+
+                        <br><br>
+
+
+                    <label for="Tipo_de_identificacion" >Tipo de identificacion</label>
+                    <select name="Tipo_de_identificacion" id="Tipo_de_identificacion"  pattern="[a-z A-Z]+" required>
+                        <option value="0">CC</option>
+                        <option value="1">TI</option>
+                        <option value="2">CN</option>
+                    </select>
+
+                    <label for="Solicitante" id="Solicitante" >Tipo de Solicitante</label>
+                    <select name="Solicitante" class="caja2"   pattern="[a-z A-Z]+" required>
+                        <option value="0">1-Padre</option>
+                        <option value="1">2-Alumno</option>
+                        <option value="2">3-Profesor</option>
+                        <option value="3">4-Empleado</option>
+                    </select>
+
+                    <br><br>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="azamora@kawak.net" minlength="12"
+                        maxlength="40" pattern="[A-Za-z 0-9 _ . @]+" required>
+            </article>
+
+
+            <br>
+
+            <article class="Num4">
+
+                <h3>Informacion de contacto</h3>
+
+                <label for="Pais">Pais</label>
+                <select name="Pais" id="Pais" pattern="[a-z A-Z]+" required>
+                    <option value="0">Colombia..</option>
+                    <option value="1">Mexico</option>
+                </select>
+
+
+                <label for="Departamento" id="Departamento">Departamento</label>
+                <select name="Departamento" class="caja3"  pattern="[a-zA-Z]+" required>
+                    <option value="0">Santander</option>
+                    <option value="1">Amazonas</option>
+                </select>
+
+                <br><br>
+
+                <label for="Ciudad">Ciudad</label>
+                <select name="Ciudad" id="Ciudad" pattern="[a-zA-Z]+" required>
+                    <option value="0">Bogota</option>
+                    <option value="1">Bucaramanga"</option>
+                </select>
+
+                <br><br>
+
+                <label for="Telefono">Telefono</label>
+                <input type="tel" id="Telefono" name="Telefono" minlength="10" maxlength="10" pattern="[0-9]+" required>
+
+                <label for="Celular" id="Celular">Celular</label>
+                <input type="tel" minlength="10" class="caja4" maxlength="10" pattern="[0-9]+" required>
+
+                <br><br>
+
+                <label for="Medio_contacto">Medio de contacto preferido</label>
+                <select name="Medio_contacto" id="Medio_contacto" pattern="[a-z A-Z]+" required>
+                    <option value="0">E-mail</option>
+                    <option value="1">Escrito</option>
+                </select>
+                
+                
+                <label for="Direccion" id="Direccion">Direccion</label>
+                <input type="text" class="caja5" name="Direccion" minlength="12" maxlength="40"
+                    pattern="[a-z A-Z 0-9]+" required>
+            </article>
+
+            <br>
+
+            <article class="Num5">
+
+
+                <h3>Informacion de solicitud</h3>
+
+
+                <label for="vencimiento" id="vencimiento">Fecha de vencimiento</label>
+                <input type="date" name="vencimiento" minlength="12" maxlength="40"
+                    pattern="[a-z A-Z 0-9]+" placeholder="Mayo 24-2019" required>
+
+                <br><br>
+
+                <label for="Asunto" id="Asunto">Asunto</label>
+                <input type="text" class="caja6"  name="Asunto" minlength="12" maxlength="40" pattern="[a-z A-Z 0-9]+"
+                    placeholder="Queja" required>
+
+                <br>
+
+                <label for="Descripcion" id="Descripcion">Descripcion</label>
+                <textarea name="Descripcion" class="caja7"  cols="25" rows="8" placeholder="Queja oracle"></textarea>
+
+                <br><br>
+
+                <label for="Adjunto" id="Adjunto">Adjunto</label>
+                <input accept="image/*" class="caja8" type="file"  name="Adjunto" multiple required>
+            </article>
+
+            <br><br>
+
+            <input type="submit">
+    </form>
+    </main>
+</body>
+
+</html>

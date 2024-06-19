@@ -3,7 +3,7 @@
     padding: 0;
     font-family: "Poetsen One", sans-serif;
     font-weight: 400;
-    font-style: normal;;
+    font-style: normal;
 }
 
 .titulo img{
@@ -18,13 +18,26 @@ body{
 
 }
 
+:root{
+  --color1:red;
+  --border-radius:40px;
+  --Black:black;
+  --Red:drop-shadow(0px 0px 12px red);
+  --Naranja:rgb(255, 153, 20);
+  --font-size-P:20px;
+  --font-size-h3:30px;
+  --Box-shadow:5px 5px 20px rgba(0,0,0,0.4);
+  --border:solid 4px #ffa412;
+}
+
+
 main{
   background: url(imagenes/fondooo.jpg) no-repeat center center fixed;
   background-size: cover;
   margin: 80px;
   padding: 20px;
-  border: 1px solid;
-  border-radius: 20px;
+  border: var(--border);
+  border-radius: var(--border-radius);
 }
 
 .container{
@@ -38,20 +51,19 @@ main{
   background-color: #3498DB;
   opacity: 92%;
   overflow: hidden;
-  box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+  box-shadow: var(--Box-shadow);
   transition: all 400ms ease;
   padding: 22px;
   margin: 10px;
-  border-radius: 8px;
-  border: solid 1px #FFC300;
+  border: var(--border);
   display: inline-block;
   vertical-align: 100px;
-  border-radius: 20px;
+  border-radius: var(--border-radius);
   cursor: default;
 }
 
 .card:hover {
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    box-shadow: var(--Box-shadow);
     transform: translateY(-3%);
 }
 
@@ -70,33 +82,15 @@ main{
 
 .card .contenido p{
     line-height: 1.5;
-    color: black;
-    font-size: 20px;
+    color: var(--Black);
+    font-size: var(--font-sizeP);
 }
 
 .card .contenido h3{
     font-weight: 400;
     margin-bottom: 15px;
-    color: red;
-    font-size: 30px;
-}
-
-.card .contenido {
-    padding: 15px;
-    text-align: center;
-}
-
-.card .contenido p{
-    line-height: 1.5;
-    color: black;
-    font-size: 20px;
-}
-
-.card .contenido h3{
-    font-weight: 400;
-    margin-bottom: 15px;
-    color: rgb(255, 153, 20);
-    font-size: 30px;
+    color: var(--Naranja);
+    font-size:var(--font-size-h3);
 }
 
 

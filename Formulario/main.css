@@ -1,0 +1,138 @@
+
+#Campo {
+    box-shadow: -5px -0px orange;
+}
+
+#incidencia {
+    margin-left: 200px;
+    margin-right: 10px;
+    box-shadow: -5px -0px orange;
+}
+
+#recepcion {
+    margin-left: 210px;
+    margin-right: 10px;
+
+}
+
+.Num2 #usuario,#Tipo_de_identificacion{
+    margin-left: 215px;
+    margin-right: 10px;
+    box-shadow: -4px 0px orange;
+
+}
+
+#Tipo_de_identificacion{
+    width: 100px;
+    height: 21px;
+    margin-left: 200px;
+}
+
+
+#identificacion{
+    margin-left: 215px;
+    margin-right: 10px
+}
+
+.Num2  #Solicitante {
+    margin-left: 290px;
+    margin-right: 10px
+}
+
+.Num2 .caja {
+    margin-left: 70px;
+    margin-right: 10px
+}
+
+.caja2 {
+    box-shadow: -4px 0px orange;
+    width: 100px;
+    height: 21px;
+    margin-left: 40px;
+}
+
+#email {
+    margin-left: 290px;
+    margin-right: 10px;
+    box-shadow: -5px -0px orange;
+}
+
+#Ciudad {
+    width: 180px;
+    height: 21px;
+    margin-left: 280px;
+    margin-right: 10px;
+    box-shadow: -4px 0px orange
+}
+
+#Pais {
+    width: 180px;
+    height: 21px;
+    margin-left: 300px;
+    margin-right: 10px;
+    box-shadow: -4px 0px orange
+}
+
+#Departamento {
+    margin-left: 220px;
+    margin-right: 10px
+}
+
+.caja3 {
+    width: 180px;
+    height: 21px;
+    margin-left: 60px;
+}
+
+
+#Telefono {
+    margin-left: 275px;
+    margin-right: 10px;
+}
+
+#Celular {
+    margin-left: 220px;
+    margin-right: 10px;
+}
+
+.caja4 {
+    margin-left: 105px;
+}
+
+#Medio_contacto {
+    margin-left: 150px;
+    margin-right: 10px;
+    width: 100px;
+    height: 21px;
+}
+
+#Direccion {
+    margin-left: 300px;
+    margin-right: 10px;
+}
+
+.caja5 {
+    margin-left: 90px;
+}
+
+.Num5 #vencimiento, #Asunto, #Descripcion, #Adjunto {
+    margin-left: 50px;
+}
+
+.caja6 {
+    margin-left: 90px;
+    box-shadow: -4px 0px orange
+}
+
+.caja7 {
+    margin-left: 60px;
+    box-shadow: -4px 0px orange
+}
+
+.caja8 {
+    margin-left: 85px;
+}
+
+
+
+

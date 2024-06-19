@@ -1,0 +1,102 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box; 
+}
+
+body{
+  background: salmon;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card{
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: white;
+  padding: 20px 20px;
+  box-shadow: -20px -20px 0px 0px #fb968b;
+  border-radius: 10px;
+  
+}
+
+h2.card_title {
+  position: relative;
+  z-index: 1;
+}
+
+.card_title{
+  margin-bottom: 14px auto;
+  text-align: center;
+  border-bottom: 0.5px;
+  color: salmon;
+  text-decoration-line: overline;
+}
+
+h2.linea {
+  position: relative;
+  z-index: 1;
+}
+
+.card_title::after,.card_title::before{
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 2px;
+  padding: 2px;
+  background-color: salmon;
+  z-index: -1;
+}
+
+
+
+p{
+  margin-bottom: 10px auto;
+}
+
+
+*::selection{
+  background-color: salmon;
+  color: white;
+}
+
+
+p::first-letter{
+  color: salmon;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+p::first-line{
+  color: steelblue;
+  font-size:2rem;
+  font-weight: bold;
+}
+
+ul{
+  counter-reset: contador;
+}
+
+li{
+  margin-bottom: 10px;
+  padding: 0;
+  list-style: none;
+  
+}
+
+
+li::before{
+  content: counter(contador);
+  counter-increment: contador;
+  background: salmon;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  color: white;
+  margin: 4px;
+}

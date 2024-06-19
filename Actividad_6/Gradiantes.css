@@ -1,0 +1,106 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Con el gradiant puedes asignarle un valor o color a todos los selectores que se le asignaron por medio del var()*/
+
+:root{
+  --color1:rgb(216, 180, 123);
+  --color2: rgb(65,4,51);
+  --grey: #717171d3;
+  --white: #f1f1f1;
+  --gradient: linear-gradient(to right,#ffecd2 0%,#fcb69f 100%);
+  --box-shadow: 5px 20px 5px rgba(199, 115, 115, 0.778);
+  --border-radius:30px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background-image: var(--gradient) ;
+}
+
+.card{
+  background: var(--white);
+  width: 300px;
+  margin: 30px auto;
+  padding: 30px 20px;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+}
+
+.card_title{
+  font-size: 30px;
+  color: var(--color2);
+  margin-bottom: 20px;
+}
+
+.container_text{
+
+}
+
+.card_copy{
+  color: var(--color1);
+  font-size: 1.4rem;
+  margin: 20px auto;
+
+}
+
+/*fallback es para darle un default o soporte cuando los px que se asignaron no se encuentrean*/
+
+
+.button{
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 20px;
+  background: var(--color1);
+  border-radius: calc( var(--border-radius, 30px) -5px);
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+
+.button__icon{
+ margin-right: 8px;
+}
+
+.button__text{
+  color: var(--grey);
+}
+
+
+.button--black{
+  background: black;
+}
+
+.button--outline{
+ background: var(--white);
+}
+
+.card2{
+  --black:#000;
+  background: var(--grey);
+  color: var(--white);
+  width: 300px;
+  margin: 30px auto;
+  padding: 30px 20px;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+}
+
+
+
+.card3{
+  --color:#fff;
+  --black:#000;
+  background: var(--grey);
+  color: var(--white);
+  width: 300px;
+  margin: 30px auto;
+  padding: 30px 20px;
+  box-shadow: var(--box-shadow);
+  border-radius:var(--border-radius);
+}
+
